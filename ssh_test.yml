@@ -1,0 +1,7 @@
+---
+- name: ssh_test
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Test connection
+      ansible.builtin.ping:
